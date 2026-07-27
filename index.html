@@ -1175,10 +1175,46 @@
               <p class="section-kicker">Project Deep Dives</p>
               <h2>More than titles: architecture, choices, and outcomes.</h2>
             </div>
-            <p class="section-lede">These sections turn the strongest repositories and the STM32 internship report into portfolio-ready case studies with visual explanations.</p>
+            <p class="section-lede">These sections turn the strongest repositories and the STM32 internship report into portfolio-ready case studies with visual explanations, from private local AI to full-stack and embedded systems.</p>
           </div>
 
           <div class="case-stack">
+            <article class="case-study">
+              <div class="case-copy">
+                <ul class="case-meta">
+                  <li>Python</li>
+                  <li>PySide6</li>
+                  <li>Phi-3.5 Mini</li>
+                  <li>Sentence Transformers</li>
+                  <li>BM25</li>
+                  <li>Foundry Local</li>
+                </ul>
+                <h3>Local RAG Assistant - Private AI for Your Documents</h3>
+                <p>Local RAG Assistant turns a folder of PDFs into a private, searchable knowledge base. Users ask questions in English or Turkish and receive grounded answers with page-level references, without sending sensitive documents or prompts to a cloud API.</p>
+                <ul class="case-points">
+                  <li>Built a complete desktop RAG pipeline: PDF extraction, chunking, embeddings, hybrid retrieval, prompt construction, local inference, and cited answers.</li>
+                  <li>Combined semantic similarity with BM25 keyword scoring so the system understands meaning without losing exact names, numbers, and technical terms.</li>
+                  <li>Ran Phi-3.5 Mini through Foundry Local, keeping document processing and answer generation on the user's Windows computer after initial model setup.</li>
+                  <li>Designed a polished PySide6 interface for multi-document upload, conversational search, source inspection, and practical everyday use.</li>
+                  <li>Added retrieval evaluation and regression tests to improve answer quality and make the AI workflow measurable, not just impressive in a demo.</li>
+                </ul>
+                <a class="project-link" href="https://github.com/ecenurbayraktar/foundry-local-rag-assistant" target="_blank" rel="noreferrer">Explore Local RAG Assistant on GitHub -></a>
+              </div>
+              <div class="visual-board" aria-label="Local RAG Assistant private document question-answering architecture">
+                <div class="flow-row">
+                  <div class="flow-node"><strong>Local PDFs</strong><span>Private documents stay on the user's computer</span></div>
+                  <div class="flow-node"><strong>Extract + chunk</strong><span>PyMuPDF prepares focused, traceable passages</span></div>
+                  <div class="flow-node"><strong>Hybrid index</strong><span>Embeddings capture meaning; BM25 preserves exact terms</span></div>
+                </div>
+                <div class="flow-arrow">question -> retrieve the strongest evidence -> build a grounded prompt</div>
+                <div class="flow-row two">
+                  <div class="flow-node"><strong>Phi-3.5 Mini</strong><span>Foundry Local generates the answer without a cloud API</span></div>
+                  <div class="flow-node"><strong>Cited answer</strong><span>Natural-language response with document and page references</span></div>
+                </div>
+                <div class="flow-arrow">Private by design · Local after model setup · English + Turkish</div>
+              </div>
+            </article>
+
             <article class="case-study">
               <div class="case-copy">
                 <ul class="case-meta">

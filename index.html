@@ -441,7 +441,7 @@
 
     .ai-capability-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 10px;
       margin-bottom: 18px;
     }
@@ -1266,16 +1266,17 @@
               <p class="section-kicker">AI Engineering Portfolio</p>
               <h2>From raw data to explainable, usable intelligence.</h2>
             </div>
-            <p class="section-lede">Three different problem spaces. One repeatable engineering approach: prepare the data, establish fair baselines, optimize deliberately, interpret model behavior, and package the result for use.</p>
+            <p class="section-lede">Four different problem spaces. One repeatable engineering approach: prepare the data, establish fair baselines, optimize deliberately, interpret model behavior, and package the result for use.</p>
           </div>
 
-          <p class="ai-intro">I build machine learning workflows across computer vision and structured data, with an emphasis on disciplined experimentation, reproducible preprocessing, model comparison, and evidence beyond a single accuracy score.</p>
+          <p class="ai-intro">I build AI workflows across retrieval-augmented generation, computer vision, and structured data, with an emphasis on disciplined experimentation, reproducible preprocessing, model comparison, privacy, and evidence beyond a single accuracy score.</p>
 
           <div class="ai-capability-grid" aria-label="AI engineering capabilities">
             <div class="ai-capability"><span>01</span><strong>Data pipelines and feature engineering</strong></div>
             <div class="ai-capability"><span>02</span><strong>Deep learning and transfer learning</strong></div>
             <div class="ai-capability"><span>03</span><strong>Model selection and optimization</strong></div>
             <div class="ai-capability"><span>04</span><strong>Explainability and error analysis</strong></div>
+            <div class="ai-capability"><span>05</span><strong>RAG and local LLM systems</strong></div>
           </div>
 
           <div class="ai-work">
@@ -1371,6 +1372,38 @@
                   <span class="tag">Random Forest</span>
                   <span class="tag">Logistic Regression</span>
                   <span class="tag">Feature Engineering</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="ai-project">
+              <div class="ai-project-heading">
+                <div>
+                  <span class="ai-project-number">Generative AI / 04</span>
+                  <h3>Local RAG Assistant</h3>
+                </div>
+                <p class="ai-project-role">Private document intelligence and local LLM inference</p>
+              </div>
+              <div class="ai-project-body">
+                <div class="ai-proof">
+                  <p>Demonstrates end-to-end RAG engineering: transforming local documents into retrievable evidence, grounding a language model in that evidence, and delivering the workflow as a native desktop product.</p>
+                  <ul class="ai-proof-list">
+                    <li>Built a modular ingestion pipeline with PyMuPDF extraction, page metadata, context-preserving chunking, and Sentence Transformer embeddings.</li>
+                    <li>Combined cosine similarity with BM25 so semantic matches and exact technical terms contribute to retrieval.</li>
+                    <li>Ran Phi-3.5 Mini through Foundry Local, keeping PDF processing, retrieval, prompts, and answer generation on the user's computer after initial model setup.</li>
+                    <li>Designed a PySide6 interface with multi-document upload, background indexing, bilingual questions, and document/page citations for grounded answers.</li>
+                  </ul>
+                  <a class="project-link" href="https://github.com/ecenurbayraktar/foundry-local-rag-assistant" target="_blank" rel="noreferrer">Inspect the local RAG architecture -></a>
+                </div>
+                <div class="ai-stack" aria-label="Local RAG Assistant technologies">
+                  <span class="ai-stack-label">Engineering stack</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">PySide6</span>
+                  <span class="tag">Phi-3.5 Mini</span>
+                  <span class="tag">Foundry Local</span>
+                  <span class="tag">Sentence Transformers</span>
+                  <span class="tag">BM25</span>
+                  <span class="tag">PyMuPDF</span>
                 </div>
               </div>
             </article>

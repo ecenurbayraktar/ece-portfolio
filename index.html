@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Ece Nur Bayraktar, a Computer Engineering student focused on web development, mobile apps, databases, machine learning, and embedded AI.">
-  <title>Ece Nur Bayraktar | Computer Engineering Portfolio</title>
+  <meta name="description" content="AI engineering portfolio of Ece Nur Bayraktar, featuring computer vision, deep learning, explainable machine learning, model optimization, and end-to-end intelligent systems.">
+  <title>Ece Nur Bayraktar | AI Engineering Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -405,6 +405,188 @@
     }
 
     .project-card.featured .project-link {
+      color: #8ce4d8;
+    }
+
+    .ai-showcase {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 88% 12%, rgba(13, 148, 136, .24), transparent 28%),
+        radial-gradient(circle at 8% 92%, rgba(226, 93, 79, .12), transparent 24%),
+        #101815;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .ai-showcase .section {
+      padding-top: 88px;
+      padding-bottom: 88px;
+    }
+
+    .ai-showcase .section-kicker {
+      color: #f0b33d;
+    }
+
+    .ai-showcase .section-lede {
+      color: rgba(255, 255, 255, .68);
+    }
+
+    .ai-intro {
+      max-width: 840px;
+      margin: -4px 0 34px;
+      color: rgba(255, 255, 255, .82);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .ai-capability-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .ai-capability {
+      min-height: 118px;
+      display: grid;
+      align-content: space-between;
+      gap: 18px;
+      padding: 17px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .05);
+      backdrop-filter: blur(12px);
+    }
+
+    .ai-capability span {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 7px;
+      background: rgba(140, 228, 216, .10);
+      color: #8ce4d8;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .ai-capability strong {
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .ai-work {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ai-project {
+      display: grid;
+      grid-template-columns: minmax(200px, .62fr) minmax(0, 1.38fr);
+      border: 1px solid rgba(255, 255, 255, .13);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .055);
+      overflow: hidden;
+    }
+
+    .ai-project-heading {
+      display: grid;
+      align-content: space-between;
+      gap: 28px;
+      min-height: 290px;
+      padding: 24px;
+      border-right: 1px solid rgba(255, 255, 255, .11);
+      background: rgba(255, 255, 255, .025);
+    }
+
+    .ai-project-number {
+      color: #8ce4d8;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .ai-project h3 {
+      max-width: 12ch;
+      margin-top: 10px;
+      font-size: clamp(24px, 3vw, 34px);
+    }
+
+    .ai-project-role {
+      margin: 0;
+      color: rgba(255, 255, 255, .60);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .ai-project-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(190px, .62fr);
+      gap: 24px;
+      padding: 24px;
+    }
+
+    .ai-proof {
+      display: grid;
+      align-content: start;
+      gap: 18px;
+    }
+
+    .ai-proof > p {
+      margin: 0;
+      color: rgba(255, 255, 255, .76);
+    }
+
+    .ai-proof-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ai-proof-list li {
+      position: relative;
+      padding-left: 20px;
+      color: rgba(255, 255, 255, .86);
+      font-size: 14px;
+    }
+
+    .ai-proof-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .72em;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--coral);
+    }
+
+    .ai-stack {
+      display: grid;
+      align-content: start;
+      gap: 8px;
+    }
+
+    .ai-stack-label {
+      margin-bottom: 4px;
+      color: rgba(255, 255, 255, .46);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .ai-stack .tag {
+      width: fit-content;
+      border-color: rgba(255, 255, 255, .14);
+      background: rgba(255, 255, 255, .07);
+      color: rgba(255, 255, 255, .80);
+    }
+
+    .ai-project .project-link {
       color: #8ce4d8;
     }
 
@@ -928,8 +1110,20 @@
       }
 
       .project-grid,
-      .skill-grid {
+      .skill-grid,
+      .ai-capability-grid {
         grid-template-columns: 1fr;
+      }
+
+      .ai-project,
+      .ai-project-body {
+        grid-template-columns: 1fr;
+      }
+
+      .ai-project-heading {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .11);
       }
 
       .section-head {
@@ -1005,6 +1199,7 @@
           <span>Ece Nur Bayraktar</span>
         </a>
         <div class="nav-links">
+          <a href="#ai-engineering">AI Engineering</a>
           <a href="#projects">Projects</a>
           <a href="#deep-dives">Deep Dives</a>
           <a href="#skills">Skills</a>
@@ -1020,15 +1215,15 @@
       </div>
       <div class="hero-inner">
         <div>
-          <p class="eyebrow">Computer Engineering Student</p>
+          <p class="eyebrow">AI Engineer · Computer Engineering Student</p>
           <h1>Ece Nur Bayraktar</h1>
           <p class="hero-copy">
-            Third-year Computer Engineering student in Izmir, building practical software across back end, front end, mobile, databases, machine learning, embedded AI, and deployment workflows.
+            I build explainable machine learning systems across computer vision, structured data, recommendation, and embedded AI—turning experiments into usable, well-engineered applications.
           </p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="#projects">
+            <a class="button primary" href="#ai-engineering">
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
-              View Projects
+              Explore AI Work
             </a>
             <a class="button" href="assets/Ece_Nur_Bayraktar_CV.pdf" download>
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="M7 10l5 5 5-5"></path><path d="M12 15V3"></path></svg>
@@ -1064,6 +1259,125 @@
     </header>
 
     <main>
+      <section class="ai-showcase" id="ai-engineering">
+        <div class="section">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">AI Engineering Portfolio</p>
+              <h2>From raw data to explainable, usable intelligence.</h2>
+            </div>
+            <p class="section-lede">Three different problem spaces. One repeatable engineering approach: prepare the data, establish fair baselines, optimize deliberately, interpret model behavior, and package the result for use.</p>
+          </div>
+
+          <p class="ai-intro">I build machine learning workflows across computer vision and structured data, with an emphasis on disciplined experimentation, reproducible preprocessing, model comparison, and evidence beyond a single accuracy score.</p>
+
+          <div class="ai-capability-grid" aria-label="AI engineering capabilities">
+            <div class="ai-capability"><span>01</span><strong>Data pipelines and feature engineering</strong></div>
+            <div class="ai-capability"><span>02</span><strong>Deep learning and transfer learning</strong></div>
+            <div class="ai-capability"><span>03</span><strong>Model selection and optimization</strong></div>
+            <div class="ai-capability"><span>04</span><strong>Explainability and error analysis</strong></div>
+          </div>
+
+          <div class="ai-work">
+            <article class="ai-project">
+              <div class="ai-project-heading">
+                <div>
+                  <span class="ai-project-number">Computer Vision / 01</span>
+                  <h3>Intel Image Classification</h3>
+                </div>
+                <p class="ai-project-role">Deep learning experimentation and inference delivery</p>
+              </div>
+              <div class="ai-project-body">
+                <div class="ai-proof">
+                  <p>Demonstrates the ability to move from architecture design to comparative evaluation and an interactive inference experience.</p>
+                  <ul class="ai-proof-list">
+                    <li>Built a custom CNN baseline, then compared it with ImageNet-pretrained ResNet50 and EfficientNetB0 under a shared evaluation workflow.</li>
+                    <li>Applied augmentation, regularization, callbacks, transfer learning, and fine-tuning to improve generalization.</li>
+                    <li>Used confusion matrices, classification reports, error analysis, and Grad-CAM to inspect both performance and model attention.</li>
+                    <li>Packaged trained Keras models behind a Streamlit interface with image validation and cached model loading.</li>
+                  </ul>
+                  <a class="project-link" href="https://github.com/ecenurbayraktar/intel-image-classification" target="_blank" rel="noreferrer">Inspect the computer vision workflow -></a>
+                </div>
+                <div class="ai-stack" aria-label="Intel image classification technologies">
+                  <span class="ai-stack-label">Engineering stack</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">Keras</span>
+                  <span class="tag">ResNet50</span>
+                  <span class="tag">EfficientNetB0</span>
+                  <span class="tag">Grad-CAM</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">Streamlit</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="ai-project">
+              <div class="ai-project-heading">
+                <div>
+                  <span class="ai-project-number">Tabular Regression / 02</span>
+                  <h3>Housing Dataset</h3>
+                </div>
+                <p class="ai-project-role">Advanced ML pipeline, tuning, and explainability</p>
+              </div>
+              <div class="ai-project-body">
+                <div class="ai-proof">
+                  <p>Shows breadth across the full classical machine learning lifecycle, from heterogeneous raw features to an interpretable optimized regressor.</p>
+                  <ul class="ai-proof-list">
+                    <li>Designed domain-aware missing-value treatment, rare-category handling, ordinal and one-hot encoding, scaling, and engineered property signals.</li>
+                    <li>Benchmarked Random Forest, XGBoost, CatBoost, and LightGBM with cross-validation using RMSE and R².</li>
+                    <li>Refined LightGBM through staged RandomizedSearchCV and GridSearchCV rather than relying on default parameters.</li>
+                    <li>Used SHAP, feature importance, and residual diagnostics to explain predictions and investigate error behavior.</li>
+                  </ul>
+                  <a class="project-link" href="https://github.com/ecenurbayraktar/housing_dataset" target="_blank" rel="noreferrer">Inspect the regression workflow -></a>
+                </div>
+                <div class="ai-stack" aria-label="Housing dataset technologies">
+                  <span class="ai-stack-label">Engineering stack</span>
+                  <span class="tag">Scikit-learn</span>
+                  <span class="tag">LightGBM</span>
+                  <span class="tag">XGBoost</span>
+                  <span class="tag">CatBoost</span>
+                  <span class="tag">SHAP</span>
+                  <span class="tag">Cross-validation</span>
+                  <span class="tag">Pandas</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="ai-project">
+              <div class="ai-project-heading">
+                <div>
+                  <span class="ai-project-number">Classification / 03</span>
+                  <h3>Titanic Dataset</h3>
+                </div>
+                <p class="ai-project-role">Feature engineering and comparative classification</p>
+              </div>
+              <div class="ai-project-body">
+                <div class="ai-proof">
+                  <p>Highlights analytical judgment: turning incomplete passenger records into structured signals and testing how preprocessing choices affect classification.</p>
+                  <ul class="ai-proof-list">
+                    <li>Combined exploratory analysis with custom IQR-based outlier detection and targeted visual investigation.</li>
+                    <li>Compared median/mode imputation against KNN imputation instead of treating preprocessing as a fixed assumption.</li>
+                    <li>Engineered demographic and social-context features from titles, cabins, decks, ticket groups, and family structure.</li>
+                    <li>Evaluated Logistic Regression and Random Forest using accuracy, precision, recall, F1, classification reports, and confusion matrices.</li>
+                  </ul>
+                  <a class="project-link" href="https://github.com/ecenurbayraktar/titanic_dataset" target="_blank" rel="noreferrer">Inspect the classification workflow -></a>
+                </div>
+                <div class="ai-stack" aria-label="Titanic dataset technologies">
+                  <span class="ai-stack-label">Engineering stack</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">Seaborn</span>
+                  <span class="tag">KNN Imputer</span>
+                  <span class="tag">Random Forest</span>
+                  <span class="tag">Logistic Regression</span>
+                  <span class="tag">Feature Engineering</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="projects">
         <div class="section-head">
           <div>

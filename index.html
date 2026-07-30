@@ -995,163 +995,35 @@
       font-size: 14px;
     }
 
-    .experience-band {
-      background: #f3f7f3;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .career-grid {
+    .timeline {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
     }
 
-    .career-card {
-      min-height: 390px;
-      display: flex;
-      flex-direction: column;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--surface);
-      box-shadow: 0 14px 36px rgba(23, 32, 29, .06);
-    }
-
-    .career-card.current {
-      box-shadow: inset 0 3px 0 var(--teal), 0 14px 36px rgba(23, 32, 29, .06);
-    }
-
-    .career-card-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-
-    .career-date,
-    .career-status {
-      color: var(--teal-dark);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    .career-status {
-      padding: 4px 8px;
-      border-radius: 999px;
-      background: #e7f5f1;
-    }
-
-    .career-card h3 {
-      font-size: 23px;
-    }
-
-    .career-org {
-      min-height: 48px;
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .career-points {
+    .timeline-item {
       display: grid;
-      gap: 10px;
-      margin: 20px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .career-points li {
-      position: relative;
-      padding-left: 20px;
-      color: #34403b;
-      font-size: 14px;
-    }
-
-    .career-points li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: .72em;
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: var(--coral);
-    }
-
-    .career-card .tags {
-      margin-top: auto;
-      padding-top: 24px;
-    }
-
-    .academic-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .education-stack {
-      display: grid;
-      gap: 14px;
-    }
-
-    .education-card,
-    .academic-details {
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--surface);
-      box-shadow: 0 14px 36px rgba(23, 32, 29, .06);
-    }
-
-    .education-card {
-      display: grid;
-      grid-template-columns: 120px minmax(0, 1fr);
-      gap: 22px;
-      align-items: start;
-    }
-
-    .education-date {
-      color: var(--teal-dark);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .education-card h3,
-    .academic-details h3 {
-      font-size: 21px;
-    }
-
-    .education-card p,
-    .academic-details p {
-      margin: 8px 0 0;
-      color: var(--muted);
-    }
-
-    .academic-details {
-      display: grid;
-      align-content: start;
+      grid-template-columns: 180px 1fr;
       gap: 24px;
-      background:
-        linear-gradient(135deg, rgba(13, 148, 136, .07), rgba(226, 93, 79, .04)),
-        var(--surface);
-    }
-
-    .academic-detail + .academic-detail {
-      padding-top: 24px;
+      padding: 22px 0;
       border-top: 1px solid var(--line);
     }
 
-    .language-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
+    .timeline-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-date {
+      color: var(--teal-dark);
+      font-weight: 800;
+    }
+
+    .timeline-item h3 {
+      font-size: 20px;
+    }
+
+    .timeline-item p {
+      margin: 8px 0 0;
+      color: var(--muted);
     }
 
     .contact-band {
@@ -1239,9 +1111,7 @@
 
       .project-grid,
       .skill-grid,
-      .ai-capability-grid,
-      .career-grid,
-      .academic-grid {
+      .ai-capability-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1290,13 +1160,7 @@
         width: 100%;
       }
 
-      .career-card,
-      .education-card,
-      .academic-details {
-        padding: 18px;
-      }
-
-      .education-card {
+      .timeline-item {
         grid-template-columns: 1fr;
         gap: 8px;
       }
@@ -1339,8 +1203,7 @@
           <a href="#projects">Projects</a>
           <a href="#deep-dives">Deep Dives</a>
           <a href="#skills">Skills</a>
-          <a href="#experience">Internships</a>
-          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -1908,113 +1771,69 @@
         </div>
       </section>
 
-      <section class="experience-band" id="experience">
-        <div class="section">
-          <div class="section-head">
+      <section class="section" id="experience">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Internships</p>
+            <h2>Professional experience through applied engineering work.</h2>
+          </div>
+          <p class="section-lede">Hands-on internship experience across local generative AI, applied machine learning, software engineering, and embedded deployment.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Summer 2026 - Present</div>
             <div>
-              <p class="section-kicker">Internships & Applied Experience</p>
-              <h2>AI engineering in professional environments.</h2>
+              <h3>AI Intern - Microsoft Summer Internship Program</h3>
+              <p>Developing a retrieval-augmented generation application powered by a locally hosted language model, covering document chunking, embeddings, semantic retrieval, prompt construction, and response generation.</p>
             </div>
-            <p class="section-lede">Three internship experiences spanning local generative AI, applied machine learning, software engineering, and embedded deployment.</p>
-          </div>
-          <div class="career-grid">
-            <article class="career-card current">
-              <div class="career-card-head">
-                <span class="career-date">Summer 2026 - Present</span>
-                <span class="career-status">Current</span>
-              </div>
-              <h3>AI Intern</h3>
-              <p class="career-org">Microsoft Summer Internship Program</p>
-              <ul class="career-points">
-                <li>Developing a retrieval-augmented generation application powered by a locally hosted language model.</li>
-                <li>Building the pipeline across document chunking, embeddings, semantic retrieval, prompt construction, and response generation.</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">RAG</span>
-                <span class="tag">Local LLM</span>
-                <span class="tag">Embeddings</span>
-                <span class="tag">Semantic Retrieval</span>
-              </div>
-            </article>
-
-            <article class="career-card current">
-              <div class="career-card-head">
-                <span class="career-date">2026 - Present</span>
-                <span class="career-status">Current</span>
-              </div>
-              <h3>AI & Software Development Intern</h3>
-              <p class="career-org">Niso Software Technologies Limited Company</p>
-              <ul class="career-points">
-                <li>Contributing to AI-focused development in a professional software engineering environment.</li>
-                <li>Applying data processing, model development, and software engineering practices to active AI work.</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">Artificial Intelligence</span>
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Software Engineering</span>
-              </div>
-            </article>
-
-            <article class="career-card">
-              <div class="career-card-head">
-                <span class="career-date">2025 · 25 days</span>
-              </div>
-              <h3>Software Development Intern</h3>
-              <p class="career-org">Niso Software Technologies Limited Company</p>
-              <ul class="career-points">
-                <li>Developed a machine learning-based command recognition application for deployment on an STM32 microcontroller.</li>
-                <li>Combined data processing and model development with embedded memory and deployment constraints.</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">STM32</span>
-                <span class="tag">Embedded AI</span>
-                <span class="tag">X-CUBE-AI</span>
-                <span class="tag">C</span>
-              </div>
-            </article>
-          </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2026 - Present</div>
+            <div>
+              <h3>AI & Software Development Intern - Niso Software Technologies Limited Company</h3>
+              <p>Contributing to AI-focused development while applying data processing, model development, and software engineering practices in a professional environment.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div>
+              <h3>Software Development Intern - Niso Software Technologies Limited Company</h3>
+              <p>Developed a machine learning-based command recognition application for STM32, combining data processing and model development with embedded deployment constraints.</p>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="section" id="education">
         <div class="section-head">
           <div>
-            <p class="section-kicker">Education & Academic Background</p>
-            <h2>Engineering foundations with an international perspective.</h2>
+            <p class="section-kicker">Academic Background</p>
+            <h2>Academic depth with practical engineering habits.</h2>
           </div>
-          <p class="section-lede">Formal computer engineering education supported by strong academic performance, language skills, and cross-cultural experience.</p>
+          <p class="section-lede">A disciplined, research-oriented path shaped by university projects, strong academic performance, and international experience.</p>
         </div>
-        <div class="academic-grid">
-          <div class="education-stack">
-            <article class="education-card">
-              <div class="education-date">Current · 3rd Year</div>
-              <div>
-                <h3>Dokuz Eylul University</h3>
-                <p>B.Sc. Computer Engineering, with practical work across AI, software systems, databases, mobile applications, and embedded computing.</p>
-              </div>
-            </article>
-            <article class="education-card">
-              <div class="education-date">Graduated 2022</div>
-              <div>
-                <h3>Hasan Turek Anatolian High School</h3>
-                <p>Graduated 2nd in class, demonstrating consistent academic performance and disciplined study habits.</p>
-              </div>
-            </article>
-          </div>
-          <aside class="academic-details" aria-label="Languages and international experience">
-            <div class="academic-detail">
-              <h3>Languages</h3>
-              <p>Comfortable working with English technical documentation and international project contexts.</p>
-              <div class="language-list">
-                <span class="tag">English · Advanced</span>
-                <span class="tag">German · A2-B1</span>
-              </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Current</div>
+            <div>
+              <h3>B.Sc. Computer Engineering - Dokuz Eylul University</h3>
+              <p>Third-year Computer Engineering student focused on translating theory into working applications across back end, front end, data, mobile, and deployment workflows.</p>
             </div>
-            <div class="academic-detail">
-              <h3>Erasmus+ Exchange Program · Poland</h3>
-              <p>Participated in a high-school exchange program, gaining early international and cross-cultural experience.</p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div>
+              <h3>Hasan Turek Anatolian High School</h3>
+              <p>Graduated 2nd in class. Participated in an Erasmus+ exchange program in Poland, gaining early international and cross-cultural experience.</p>
             </div>
-          </aside>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">Languages</div>
+            <div>
+              <h3>English - Advanced, German - A2-B1</h3>
+              <p>Comfortable working with English technical material and cross-cultural project contexts.</p>
+            </div>
+          </article>
         </div>
       </section>
 

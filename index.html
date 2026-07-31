@@ -404,6 +404,17 @@
       font-weight: 800;
     }
 
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 18px;
+    }
+
+    .project-actions .project-link {
+      margin-top: 0;
+    }
+
     .project-card.featured .project-link {
       color: #8ce4d8;
     }
@@ -588,6 +599,34 @@
 
     .ai-project .project-link {
       color: #8ce4d8;
+    }
+
+    .ai-project-media {
+      grid-column: 1 / -1;
+      margin: 0;
+      padding: 22px 24px 24px;
+      border-top: 1px solid rgba(255, 255, 255, .11);
+      background: rgba(0, 0, 0, .14);
+    }
+
+    .ai-project-media a {
+      display: block;
+      border-radius: 7px;
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, .28);
+    }
+
+    .ai-project-media img {
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 7px;
+    }
+
+    .ai-project-media figcaption {
+      margin-top: 11px;
+      color: rgba(255, 255, 255, .58);
+      font-size: 12px;
     }
 
     .deep-dives {
@@ -1393,7 +1432,10 @@
                     <li>Ran Phi-3.5 Mini through Foundry Local, keeping PDF processing, retrieval, prompts, and answer generation on the user's computer after initial model setup.</li>
                     <li>Designed a PySide6 interface with multi-document upload, background indexing, bilingual questions, and document/page citations for grounded answers.</li>
                   </ul>
-                  <a class="project-link" href="https://github.com/ecenurbayraktar/foundry-local-rag-assistant" target="_blank" rel="noreferrer">Inspect the local RAG architecture -></a>
+                  <div class="project-actions" aria-label="Local RAG Assistant links">
+                    <a class="project-link" href="https://ece-nur-bayraktar-rag.ecenurbayraktarr.chatgpt.site/" target="_blank" rel="noreferrer">Visit the live product site -></a>
+                    <a class="project-link" href="https://github.com/ecenurbayraktar/foundry-local-rag-assistant" target="_blank" rel="noreferrer">Inspect the architecture -></a>
+                  </div>
                 </div>
                 <div class="ai-stack" aria-label="Local RAG Assistant technologies">
                   <span class="ai-stack-label">Engineering stack</span>
@@ -1406,6 +1448,12 @@
                   <span class="tag">PyMuPDF</span>
                 </div>
               </div>
+              <figure class="ai-project-media">
+                <a href="https://ece-nur-bayraktar-rag.ecenurbayraktarr.chatgpt.site/" target="_blank" rel="noreferrer" aria-label="Open the Local RAG Assistant live product site">
+                  <img src="assets/local-rag-assistant-desktop.png" width="1735" height="1020" loading="lazy" alt="Local RAG Assistant desktop interface answering a question from indexed banking PDF documents with cited source references.">
+                </a>
+                <figcaption>Desktop application: local PDF indexing, grounded answers, source citations, and on-device Phi-3.5 Mini inference.</figcaption>
+              </figure>
             </article>
           </div>
         </div>
@@ -1433,7 +1481,10 @@
               <span class="tag">BM25</span>
               <span class="tag">Sentence Transformers</span>
             </div>
-            <a class="project-link" href="https://github.com/ecenurbayraktar/foundry-local-rag-assistant" target="_blank" rel="noreferrer">View repository -></a>
+            <div class="project-actions" aria-label="Local RAG Assistant project links">
+              <a class="project-link" href="https://ece-nur-bayraktar-rag.ecenurbayraktarr.chatgpt.site/" target="_blank" rel="noreferrer">Live product site -></a>
+              <a class="project-link" href="https://github.com/ecenurbayraktar/foundry-local-rag-assistant" target="_blank" rel="noreferrer">View repository -></a>
+            </div>
           </article>
           <article class="project-card">
             <div>

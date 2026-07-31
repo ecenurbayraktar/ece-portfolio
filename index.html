@@ -629,6 +629,49 @@
       font-size: 12px;
     }
 
+    .ai-project-gallery {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.28fr) minmax(260px, .72fr);
+      gap: 12px;
+      padding: 22px 24px 24px;
+      border-top: 1px solid rgba(255, 255, 255, .11);
+      background: rgba(0, 0, 0, .14);
+    }
+
+    .ai-project-gallery figure {
+      min-width: 0;
+      margin: 0;
+    }
+
+    .ai-gallery-stack {
+      display: grid;
+      align-content: start;
+      gap: 12px;
+    }
+
+    .ai-project-gallery a {
+      display: block;
+      border-radius: 7px;
+      overflow: hidden;
+      background: #f5f7fb;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, .24);
+    }
+
+    .ai-project-gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 7px;
+    }
+
+    .ai-project-gallery figcaption {
+      margin-top: 9px;
+      color: rgba(255, 255, 255, .58);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
     .deep-dives {
       background: #f3f7f3;
       border-top: 1px solid var(--line);
@@ -1165,6 +1208,10 @@
         border-bottom: 1px solid rgba(255, 255, 255, .11);
       }
 
+      .ai-project-gallery {
+        grid-template-columns: 1fr;
+      }
+
       .section-head {
         align-items: start;
         flex-direction: column;
@@ -1193,6 +1240,11 @@
       .hero-actions {
         align-items: stretch;
         flex-direction: column;
+      }
+
+      .ai-project-media,
+      .ai-project-gallery {
+        padding: 18px;
       }
 
       .button {
@@ -1347,6 +1399,28 @@
                   <span class="tag">Grad-CAM</span>
                   <span class="tag">OpenCV</span>
                   <span class="tag">Streamlit</span>
+                </div>
+              </div>
+              <div class="ai-project-gallery" aria-label="Intel Image Classification project visuals">
+                <figure>
+                  <a href="assets/intel-grad-cam-results.png" target="_blank" rel="noreferrer" aria-label="Open the full-size ResNet50 Grad-CAM results">
+                    <img src="assets/intel-grad-cam-results.png" width="1045" height="784" loading="lazy" alt="ResNet50 Grad-CAM comparisons for buildings, forest, glacier, mountain, sea, and street scene classes.">
+                  </a>
+                  <figcaption>ResNet50 Grad-CAM analysis across all six scene classes, validating both predictions and the image regions influencing them.</figcaption>
+                </figure>
+                <div class="ai-gallery-stack">
+                  <figure>
+                    <a href="assets/intel-classification-web-overview.png" target="_blank" rel="noreferrer" aria-label="Open the full-size NISO classification interface overview">
+                      <img src="assets/intel-classification-web-overview.png" width="1554" height="771" loading="lazy" alt="NISO internship image classification web interface with EfficientNetB0 selected as the active model.">
+                    </a>
+                    <figcaption>Web inference workspace with integrated model selection and runtime status.</figcaption>
+                  </figure>
+                  <figure>
+                    <a href="assets/intel-classification-web-prediction.png" target="_blank" rel="noreferrer" aria-label="Open the full-size image classification prediction result">
+                      <img src="assets/intel-classification-web-prediction.png" width="1594" height="771" loading="lazy" alt="EfficientNetB0 web inference result classifying a mountain image with 94.2 percent confidence.">
+                    </a>
+                    <figcaption>End-to-end prediction flow: uploaded scene, EfficientNetB0 inference, class output, and confidence score.</figcaption>
+                  </figure>
                 </div>
               </div>
             </article>

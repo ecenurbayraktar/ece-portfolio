@@ -12880,6 +12880,8 @@ Error generating stack: ` +
     },
   ],
   C = [
+{"id": "upschool", "name": "UP School", "icon": "📁", "role": "Program Participant · AI & Career Development", "period": "September 2026 · 3 weeks", "files": [{"name": "Program.md", "icon": "📄", "content": "# UPgrade Your Career with AI\n\nAkbank Gençlik Akademisi × UP School\nSeptember 2026 · 3 weeks\n\nSelected participant in a three-week educational and career development program focused on applying AI to learning, career development, and productivity."}]},
+{"id": "certificates", "name": "Certificates", "icon": "📁", "role": "Certifications & Participation Certificates", "period": "2026", "files": [{"name": "IBM AI Agents Bootcamp.md", "icon": "📄", "content": "# IBM AI Agents Bootcamp\n\nIBM · September 2026\n\nCredential ID: PLAN-8D18B12670FC"}, {"name": "AI Builder: Vibecoding & Agents.md", "icon": "📄", "content": "# AI Builder: Vibecoding & Agents\n\nCoderspace · September 2026\n\nCredential ID: 1ab00a61-1f2d-402b-8279-9373a34c2003"}, {"name": "AI ile Üretkenlik: ChatGPT & Claude Masterclass.md", "icon": "📄", "content": "# AI ile Üretkenlik: ChatGPT & Claude Masterclass\n\nCoderspace · September 2026\n\nCredential ID: 0d89181c-61d1-4321-9971-0bf72c3ce817"}, {"name": "Code Hub.md", "icon": "📄", "content": "# Code Hub\n\nTalentcoders · September 2026\n\nParticipation certificate.\n\nCredential ID: CHDB9FABD55"}, {"name": "anbean Kariyer Okulu: Yaz Kampı.md", "icon": "📄", "content": "# anbean Kariyer Okulu: Yaz Kampı\n\nanbean · August 2026\n\nParticipation certificate.\n\nCredential ID: 2593c181-8162-4ce1"}, {"name": "AI Innovators Internship Program.md", "icon": "📄", "content": "# AI Innovators Internship Program\n\nMicrosoft · August 2026"}, {"name": "Deep Learning Specialization.md", "icon": "📄", "content": "# Deep Learning Specialization\n\nDeepLearning.AI · August 2026"}, {"name": "Generative AI for Software Development.md", "icon": "📄", "content": "# Generative AI for Software Development\n\nDeepLearning.AI · August 2026"}, {"name": "ML Explainability.md", "icon": "📄", "content": "# ML Explainability\n\nKaggle · August 2026"}, {"name": "Automotive Camp.md", "icon": "📄", "content": "# Automotive Camp\n\nOSD · July 2026"}]},
     {
       id: `semafor`,
       name: `Semafor Teknoloji`,
@@ -13004,7 +13006,7 @@ Dört Bağla Mobile with local play, online rooms, messaging, offline AI, and sy
           icon: `🎓`,
           content: `# Dokuz Eylül University
 
-B.Sc. Computer Engineering · 3rd Year`,
+B.Sc. Computer Engineering · 4th Year`,
         },
         {
           name: `High School.md`,
@@ -13130,6 +13132,8 @@ Erasmus+ Exchange Program · Poland`,
     },
   },
   ne = {
+upschool: {"name": "UP School", "role": "Program Katılımcısı · Yapay Zekâ ve Kariyer Gelişimi", "period": "Eylül 2026 · 3 hafta", "files": [{"name": "Program.md", "icon": "📄", "content": "# UPgrade Your Career with AI\n\nAkbank Gençlik Akademisi × UP School\nEylül 2026 · 3 hafta\n\nYapay zekânın öğrenme, kariyer gelişimi ve üretkenlikte kullanımına odaklanan üç haftalık eğitim ve kariyer gelişim programına seçilerek katıldım."}]},
+certificates: {"name": "Sertifikalar", "role": "Eğitim ve Katılım Sertifikaları", "period": "2026", "files": [{"name": "IBM AI Agents Bootcamp.md", "icon": "📄", "content": "# IBM AI Agents Bootcamp\n\nIBM · Eylül 2026\n\nYeterlilik Kimliği: PLAN-8D18B12670FC"}, {"name": "AI Builder: Vibecoding & Agents.md", "icon": "📄", "content": "# AI Builder: Vibecoding & Agents\n\nCoderspace · Eylül 2026\n\nYeterlilik Kimliği: 1ab00a61-1f2d-402b-8279-9373a34c2003"}, {"name": "AI ile Üretkenlik: ChatGPT & Claude Masterclass.md", "icon": "📄", "content": "# AI ile Üretkenlik: ChatGPT & Claude Masterclass\n\nCoderspace · Eylül 2026\n\nYeterlilik Kimliği: 0d89181c-61d1-4321-9971-0bf72c3ce817"}, {"name": "Code Hub.md", "icon": "📄", "content": "# Code Hub\n\nTalentcoders · Eylül 2026\n\nKatılım sertifikası.\n\nYeterlilik Kimliği: CHDB9FABD55"}, {"name": "anbean Kariyer Okulu: Yaz Kampı.md", "icon": "📄", "content": "# anbean Kariyer Okulu: Yaz Kampı\n\nanbean · Ağustos 2026\n\nKatılım sertifikası.\n\nYeterlilik Kimliği: 2593c181-8162-4ce1"}, {"name": "AI Innovators Internship Program.md", "icon": "📄", "content": "# AI Innovators Internship Program\n\nMicrosoft · Ağustos 2026"}, {"name": "Deep Learning Specialization.md", "icon": "📄", "content": "# Deep Learning Specialization\n\nDeepLearning.AI · Ağustos 2026"}, {"name": "Generative AI for Software Development.md", "icon": "📄", "content": "# Generative AI for Software Development\n\nDeepLearning.AI · Ağustos 2026"}, {"name": "ML Explainability.md", "icon": "📄", "content": "# ML Explainability\n\nKaggle · Ağustos 2026"}, {"name": "Automotive Camp.md", "icon": "📄", "content": "# Automotive Camp\n\nOSD · Temmuz 2026"}]},
     semafor: {
       role: `Yazılım Mühendisi Stajyeri`,
       period: `Ağustos 2026`,
@@ -13243,7 +13247,7 @@ Yerel oyun, online odalar, mesajlaşma, çevrimdışı AI ve Firebase senkroniza
           icon: `🎓`,
           content: `# Dokuz Eylül Üniversitesi
 
-Bilgisayar Mühendisliği Lisans · 3. Sınıf`,
+Bilgisayar Mühendisliği Lisans · 4. Sınıf`,
         },
         {
           name: `High School.md`,
